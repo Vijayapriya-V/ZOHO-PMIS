@@ -1,0 +1,212 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  color: #333;
+  margin: 0;
+  background:
+    linear-gradient(135deg, #5271ff 0%, #7a47fa 100%) fixed,
+    url("data:image/svg+xml,%3Csvg width='340' height='340' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='170' cy='170' rx='160' ry='80' fill='%23fff' fill-opacity='0.035'/%3E%3Cellipse cx='220' cy='40' rx='86' ry='33' fill='%23f5f5fd' fill-opacity='0.13'/%3E%3Cellipse cx='80' cy='240' rx='86' ry='33' fill='%23f5f5fd' fill-opacity='0.13'/%3E%3C/svg%3E") repeat;
+  background-blend-mode: overlay;
+}
+
+
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  margin-right: 16px;
+  background: #fff;
+  object-fit: contain;
+  border: 2px solid #eee;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.tagline {
+  font-size: 1rem;
+  opacity: .95;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 10px 30px #c5ccfa29;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  margin: 10px 0 28px 0;
+  justify-content: center;
+  gap: 10px;
+}
+
+.progress-step {
+  flex: 1 1 auto;
+  min-width: 60px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 0.98rem;
+  background: #dbeafe;
+  color: #666;
+  opacity: 0.6;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.progress-step.active {
+  background: linear-gradient(90deg, #667eea 50%, #764ba2 100%);
+  color: #fff;
+  opacity: 1;
+}
+
+.form-step {
+  display: none;
+  animation: fadeIn .4s;
+}
+
+.form-step.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(28px);}
+  to   { opacity: 1; transform: none;}
+}
+
+h2 { margin-bottom: 18px; color: #364185; font-weight: 600; letter-spacing: 1px;}
+
+.input-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.input-group label {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #6066a6;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #dee2ef;
+  border-radius: 8px;
+  margin-top: 2px;
+  font-size: 1.03rem;
+  transition: border-color 0.2s;
+  background: #f9fafb;
+  font-family: inherit;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.input-group .error-message {
+  color: #d6465d;
+  font-size: 0.89em;
+  margin-top: 3px;
+  min-height: 18px;
+  display: block;
+}
+
+.action-buttons {
+  margin-top: 22px;
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #667eea;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.03rem;
+  transition: background .25s, box-shadow .18s;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px #667eea2a;
+}
+
+.btn:hover,
+.btn:focus { background: #764ba2; }
+
+.success-animation {
+  text-align: center;
+  margin: 18px 0;
+}
+.success-animation i {
+  font-size: 50px;
+  color: #27ae60;
+  animation: popIn 0.88s;
+}
+@keyframes popIn {
+  0% { transform: scale(0);}
+  60% { transform: scale(1.28);}
+  80% { transform: scale(0.98);}
+  100% { transform: scale(1);}
+}
+
+.review-details {
+  margin-bottom: 14px;
+  padding: 15px 12px;
+  background: #f8f9fa;
+  border-radius: 11px;
+  border: 1px solid #eef1fd;
+  font-size: 1.03rem;
+}
+.review-details div {
+  margin-bottom: 8px;
+  color: #464960;
+}
+.review-details strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .card { padding: 15px; }
+  .app-header h1 { font-size: 1.25rem;}
+  .logo-img { width: 35px; height: 35px;}
+}
