@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale =1.0">
+        <title>Image Access</title>
+        <style>
+            .image-style{
+                margin: 30px; 
+                border: 2px solid #333; 
+                border-radius: 4px; 
+                box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 style = "text-align: center;">FUTURE OF MY HOME TOWN</h1>
+        <div style = "display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div class = image-style>
+                <img
+                    src =  "https://media.licdn.com/dms/image/v2/D5612AQEKr4exDhtxeQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1707029529109?e=1762387200&v=beta&t=tcwUj0FoArj3K2W0t1KiEwjaExiagH-TzV3UkdDz66E"
+                    alt = "India's Future: A symphony of Tradition and Technology"
+                    width = "300"
+                    height = "200"
+                    title = "FUTURE INDIA"
+                >
+                <p style = "text-align: center">"This is a standard image. "<br>India's Future: Tradition and Technology</p>
+            </div>
+        
+            <div class = image-style>
+                <a href = "https://infrainfohub.com/future-upcoming-tamil-nadu-mega-projects/" target = "_blank">
+                    <img 
+                        src = "https://infrainfohub.com/wp-content/uploads/2023/09/Chennai-Mega-Sports-City.jpg"
+                        alt = "Future TamilNadu: Mega project"
+                        width = "300"
+                        height = "200"
+                        title = "TAMILNADU'S MEGA PROJECT"
+                    >
+                    <p style = "text-align: center">"This image is a clickable link."<br>Future TamilNadu: Mega project</p>
+                </a>
+            </div>
+            <div class = image-style>
+                <img 
+                    src = "assets/Future_RJPM.png"
+                    alt = "Sustainable Rajapalayam"
+                    width = "300"
+                    height = "200"
+                    title = "Rjapalayam 2050"
+                    loading = "lazy"
+                >
+                <p style = "text-align: center">"This image is lazy loaded."<br>Sustainable Rajapalayam</p>
+            </div>
+        </div>
+    </body>
+</html>

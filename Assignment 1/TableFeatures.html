@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initical-scale = 1.0">
+        <title>HTML Table Features</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse; 
+            td {
+                background-color: #f2f2f2;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style = "text-align: center;">
+            <pre>Create a table consisting of at least five rows.
+Within this table, you must incorporate features such as
+column spanning, row spanning, cell spacing, and cell padding.
+            </pre>
+        </h2>
+        <table cellspacing = "10" cellpadding = "20" style = "width = 100%; max-width: 600px; margin: 20px auto">
+            <tr>
+                <td colspan = "3" style = "background-color: lightgray; font-weight: bold; text-align: center;">
+                    Column spanning
+                </td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Hello</td>
+                <td rowspan = "2" style = "background-color: lightgray; font-weight: bold">
+                    Row Spanning
+                </td>
+                <td>World</td>
+            </tr>
+            <tr>
+                <td>Software</td>
+                <td>Development</td>
+            </tr>
+            <tr>
+                <td>One</td>
+                <td>Two</td>
+                <td>Three</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayapriya Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #0d0c0cff;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .left-column {
+            flex: 1;
+            background-color: #4f024fff;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .left-column h2 {
+            color: #fff;
+            margin-top: 0;
+            border-bottom: 2px solid #938193ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .left-column p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .right-column {
+            flex: 2;
+            padding: 40px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 170px;
+            border-radius: 20%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: #ccc;
+        }
+        .logo {
+            width: 25px;
+            height: 25px;
+            border-radius: 14px;
+            border: 1px solid #fff;
+            object-fit: cover;            
+            background-color: #ccc;
+        }
+        .zoho-logo {
+            width: 55px;
+            height: 25px;
+            border-radius: 8px;
+            border: 1px solid #fff;
+            object-fit: cover;            
+            background-color: #faf8f8ff;
+        }
+        .skill-list li, .contact-list li {
+            list-style: none;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #938193ff;
+            border-radius: 8px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        .skill-list li: hover, .contact-list li: hover{
+            background-color: #7a6e7a;
+        }
+        .contact-list li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: #4f024fff;
+            border-bottom: 2px solid #938193ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Column: Personal Info -->
+        <div class="left-column">
+            <img class="profile-photo" src="assets/Vijayapriya-removebg-preview.png" alt="Vijayapriya's profile pic">
+            <h1>VIJAYAPRIYA V</h1>
+            <h3 style="font-size: 1.2em; font-weight: bold; margin-top: -10px;"><img class="zoho-logo" src="assets/zoho_logo-removebg-preview.png" alt = "Zoho logo"> ZOHO Intern</h3>
+
+            <div class="section">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li><a href="mailto:vijayapriya1892003@gmail.com"><img class="logo" src="assets/email-removebg-preview.png" alt="Email id"> Email: vijayapriya1892003@gmail.com</a></li>
+                    <li><a href="tel:+918148065931"><img class="logo" src="assets/phone-removebg-preview.png" alt="Phone number"> Phone: +91 8148065931</a></li>
+                    <li><a href="https://www.linkedin.com/in/vijayapriya-v/" target="_blank"><img class="logo" src="assets/linkedin-removebg-preview.png" alt="Linkedin id"> LinkedIn: linkedin.com/in/vijayapriya-v</a></li>
+                    <li><a href="https://github.com/Vijayapriya-V" target="_blank"><img class="logo" src="assets/github-removebg-preview.png" alt="Github id"> GitHub: github.com/Vijayapriya-V</a></li>
+                    <li><a href="https://www.google.com/maps/search/38b,+innam+chettikulam,+kamarajar+puram,+rajapalayam+-+626117+map/@9.4371269,77.5450192,19.58z?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"><img class="logo" src="assets/location-removebg-preview.png" alt="Location"> Location: Rajapalayam</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li><img class="logo" src="assets/skill-removebg-preview.png" alt="Skill 1"> HTML & CSS</li>
+                    <li><img class="logo" src="assets/skill-removebg-preview.png" alt="Skill 2"> Java</li>
+                    <li><img class="logo" src="assets/skill-removebg-preview.png" alt="Skill 3"> Image Processing</li>
+                    <li><img class="logo" src="assets/skill-removebg-preview.png" alt="Skill 4"> Deep Learning</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Column: Professional Info -->
+        <div class="right-column">
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
+                <p>
+                    A recent Computer Science and Engineering graduate from Annamalai University with a strong academic background and a passion for technology. 
+                    I am currently pursuing an internship at Zoho Corporation through the Prime Minister's Internship Scheme, 
+                    where I am gaining valuable professional experience. My key skills include Java, front-end technologies, AI, and problem-solving, and 
+                    I am dedicated to applying this knowledge to create impactful solutions and contribute to the tech community.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Projects</h2>
+                <h3>Color-based Object Tracking</h3>
+                <p><em>Image Processing</em></p>
+                <p>
+                    This project uses Python and OpenCV to track a colored object in real time using a webcam. It tells you where the object is (left, center, or right) 
+                    and how far away it is (forward, slow down, or stop). This shows my skills in image processing and computer vision.
+                </p>
+
+                <h3>Automatic Image and Video Captioning</h3>
+                <p><em>Deep Learing</em></p>
+                <p>
+                    Developed a final-year project that automatically generates captions for images and videos using deep learning. 
+                    This system uses a hybrid CNN-RNN architecture that combines advanced models like InceptionV3 and LSTM to understand visual content and 
+                    produce descriptive text. My work on this project demonstrates my expertise in Deep Learning, computer vision, and Natural Language Processing (NLP).
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <h3>Graduate</h3>
+                <p><em>Annamalai University | 2025</em></p>
+                <p>B.E. CSE(Hons.) <br> OGPA: 9.12</p>
+                <h3>Higher Secondary</h3>
+                <p><em>PACR Ammani Ammal's Girls' Higher Secondary School | 2021</em></p>
+                <p>Maths Computer Science <br>Score: 549.69 out of 600 | Average: 91.62</p>
+                <h3>Secondary</h3>
+                <p><em>SS Government Girls' Higher Secondary School | 2019</em></p>
+                <p>Score: 444 out of 500 | Average: 88.8</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
